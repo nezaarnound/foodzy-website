@@ -1,0 +1,870 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+<style>
+
+
+body{
+    width: 1200px;
+      margin: 0 auto;
+      font-family: 'Arial', sans-serif;
+       background: #fff;
+      color: #333;
+      padding:0 40px;
+
+}
+    .topnavbar,.undernavbar{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+    }
+    .topnavbar a{
+        text-decoration: none;
+        color: black;
+    }
+    .topnavbar select{
+        border: none;
+        outline: non;
+    }
+    .undernavbar,h3{
+        display: inline-block;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-between;
+    }
+
+.search-container {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.279); 
+  border-radius: 5px;
+  overflow:hidden; 
+  width: 600px; 
+  height: 45px;
+  margin-top: 0.9rem;
+}
+
+.search-container input {
+  flex: 1;
+  padding:5 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 500px;
+  height: 40px;
+}
+
+.search-container select {
+  border: none;
+  border-left: 1px solid #71c1a1;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  background: white;
+}
+
+.search-container button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-container button:hover {
+  background: #d9362a;
+}
+
+/* pro */
+
+    .contanerpro{
+        margin-left: 10rem;
+        width: 306px;
+        height: 969.97px;
+        background-color: #F7F7F8;
+        position: relative;
+        top: 3.9rem;
+    }
+    .items span{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -1.5rem;
+    }
+    .color1,.color2,.color3{
+        position: relative;
+        top: -1.2rem;
+    }
+    .button button{
+        
+         flex-direction: row;
+         column-gap: 10px;
+         row-gap: 10px;
+         border: 0.5px solid rgba(39, 20, 20, 0.082);
+         width: 100px;
+         height: 40px;
+         border-radius: 5px;
+        background-color: white;
+       
+    }
+    .div div{
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.169);
+        width: 20px;
+        height: 20px;
+        margin-top: ;
+        
+    }
+    .div p{
+    
+margin-top: 1rem;
+margin-left: 2rem;
+display: flex;
+flex-direction: column;
+    }
+
+    .product-list-container {
+    margin-left: 30rem;
+    height: 1000px;
+    position: relative;
+    top: -57rem;
+    margin-bottom: 0px;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.view-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.view-options button {
+    border: none;
+    background: #f0f0f0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.view-options button.active {
+    background: red;
+    color: white;
+}
+
+.sort-by select {
+    padding: 6px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.img-container {
+    position: relative;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cart-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background:white;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 10px;
+}
+
+.category {
+    color: #999;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.stars {
+    color: #F53E32;
+    margin: 5px 0;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 5px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination button {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    margin: 0 3px;
+    background: white;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background: red;
+    color: white;
+    border: none;
+}
+
+
+
+/* end pro */
+
+/* star footer */
+
+
+.footer {
+  background: #f9f9f9;
+  padding: 50px 20px 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+  
+}
+
+
+.aaa1{
+    position: relative;
+    text-align: right;
+    margin-top: 100px;
+}
+
+li{
+    color: rgba(0, 0, 0, 0.452);
+}
+p{
+     color: rgba(0, 0, 0, 0.452);
+     font-weight: normal;
+     
+}
+.footer-col {
+  flex: 1 1 220px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-col h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.contact-info i {
+  margin-left: 0px;
+  color: #f44336;
+}
+
+.newsletter-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 280px;
+  margin-bottom: 10px;
+}
+
+.newsletter-box input {
+  width: 384px;
+
+  border: none;
+  padding: 10px;
+  flex: 1;
+  outline: none;
+}
+
+.newsletter-box button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #555;
+}
+
+.social-icons a {
+  margin: 0 5px 10px 0;
+  display: inline-block;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  color: #333;
+  text-decoration: none;
+}
+
+.mini-gallery {
+  display: flex;
+  gap: 5px;
+  
+}
+
+.mini-gallery img {
+  width: 73.59px;
+  height: 73.59px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.footer-bottom .highlight {
+  color: #f44336;
+}
+.contact-info{
+margin-right: 8px;
+   
+}
+
+.fab fa-x-twitter{
+    color: black;
+}
+/* endfooter */
+
+
+
+
+</style>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="topnavbar">
+        <i class="fa-solid fa-bars"></i>
+        <a href="#">Home</a>
+
+
+        </a>
+
+        
+        <a href="#">
+
+<select name="" id="">
+    <option value="">
+        Category
+    </option>
+</select>
+
+        </a>
+    
+
+        
+        <a href="#">
+    
+<select name="" id="">
+    <option value="">
+        Category
+    </option>
+</select>
+
+        </a>
+    
+
+        <a href="#">
+
+<select name="" id="">
+    <option value="">
+        Category
+    </option>
+</select>
+
+        </a>
+    
+
+        
+        <a href="#">
+            
+<select name="" id="">
+    <option value="">
+Category
+    </option>
+</select>
+
+        </a>
+    
+        
+        <a href="#">
+            
+<select name="" id="">
+    <option value="">
+Category
+    </option>
+</select>
+
+        </a>
+     <span><i class="fas fa-phone"></i>+123 (234) (345)</span>
+   
+</div>
+<div class="undernavbar">
+     <img src="chife.jpg" style="width: 50px; height: 50px;"><h3>Foodzy</h3>
+     <br><span
+     style="position: relative;
+     margin-top: 2.9rem; left: -5.5rem;"
+     >Atreasure of Tastes</span> 
+
+<div class="search-container">
+  <input type="text" placeholder="Search For items..." />
+  <select>
+    <option>All Categories</option>
+    <option>Food</option>
+    <option>Drinks</option>
+    <option>Snacks</option>
+  </select>
+  <button><i class="fas fa-search"></i></button>
+</div>
+
+
+<div class="icon-menu">
+  <span class="icon-text">
+    <i class="fas fa-user"></i>
+    Account
+  </span>
+
+  <span class="icon-text">
+    <i class="fas fa-heart"></i>
+    Wishlist
+  </span>
+
+  <span class="icon-text">
+    <i class="fas fa-shopping-cart"></i>
+    Cart
+  </span>
+</div>
+
+
+
+</div>
+<div style="height: 70px; width: 1300px; background-color: #F53E32; display: flex; margin-left: -3rem; justify-content: space-around; margin-bottom: 100px; ">
+  <span style="color: white; font-weight: bold;   margin-top: 18.81px; ">Register</span> <span   style="color: white; font-weight: bold;  margin-top: 18.81px; ">Home - register</span>
+    </header>
+
+
+<!-- pro -->
+ 
+
+
+<div class="contanerpro">
+    <h5>product category</h5>
+    <br>
+    <div class="items">
+        
+        <p>juice & drinks <span style="margin-left: 15rem; color: rgba(0, 0, 0, 0.356);">[20]</span></p>         
+        <p>dairy & mik   <span style="margin-left: 15rem; color: rgba(0, 0, 0, 0.356);">[54]</span></p>
+        <p>snack & spice  <span style="margin-left: 15rem; color: rgba(0, 0, 0, 0.356);">[64]</span></p>
+        
+    </div>
+    <div class="item">
+        <br><br>
+        <h5>filter by price</h5>
+        <br><br><br>
+        <div class="line-with-dots">
+  <span class="dot"></span>
+  <span class="line"></span>
+  <span class="dot"></span>
+</div>
+<h5>price:<span style="color: rgba(0, 0, 0, 0.32);">$20-$250</span></h5>
+<br>
+<button style="color:white;background: #F53E32; width: 80.23px; height: 40px;border-radius: 5px; border: none; font-weight: bold;">filter</button>
+
+
+    </div>
+    <br>
+    <h5>pproduct Category</h5>
+    <br>
+    
+    <p>blue</p><span><div class="color1" style="background-color: blue; width: 20px;
+    height: 20px; border-radius: 5px; margin-left: 10rem;"></div>
+        <p>yello</p><span><div class="color2" style="background-color: yellow; width: 20px;
+    height: 20px; border-radius: 5px; margin-left: 10rem;"></div>
+            <p>red</p><span><div class="color3" style="background-color:red; width: 20px;
+    height: 20px; border-radius: 5px; margin-left: 10rem;"></div>
+               
+               
+
+               <h5>weight</h5>
+               <br>
+               <div class="div">
+                              <div class="dddd"></div><p>2kg pack</p>
+               <div  class="dddd"></div><p>20kg pack</p>
+               <div  class="dddd"></div><p>30kg pack</p>
+
+               </div>
+ 
+               <br>
+               <h5>product tages</h5>
+    <div class="button">
+               <button >Vegetables</button>
+               <button>juice</button>
+               <br>
+                <button>food</button>
+                <button>dry Fruits</button>
+                <br>
+                <button>Vegetables</button>
+                <button>juice</button>
+              </div> 
+
+</div>
+
+
+<div class="product-list-container">
+    <div class="product-header">
+        <div class="view-options">
+            <button class="grid-view active"><i class="fas fa-th"></i></button>
+            <span>We found 29 items for you!</span>
+        </div>
+        <div class="sort-by">
+            <label>Sort By :</label>
+            <select>
+                <option>Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\32966da4e1702fbf32accc5ccbd2815916da554f.jpg" alt="Lemon">
+                <button class="cart-btn"><i class="fas fa-lock"></i></button>
+            </div>
+            <p class="category">Vegetables</p>
+            <h4>Fresh organic villa farm lemon 500gm pack</h4>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <div class="price">
+                <span class="new-price">$120.25</span>
+                <span class="old-price">$123.25</span>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\39fe4d9aaffa21f32951025416cb5a37b7376e47.jpg" alt="Snacks">
+                <button class="cart-btn"><i class="fas fa-lock"></i></button>
+            </div>
+            <p class="category">Snacks</p>
+            <h4>Best snacks with hazel nut pack 200gm</h4>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <div class="price">
+                <span class="new-price">$145</span>
+                <span class="old-price">$150</span>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\6351169aebf88338d08abbbb3a9fa63eca161843.jpg" alt="Juice">
+                <button class="cart-btn"><i class="fas fas fa-lock"></i></button>
+            </div>
+            <p class="category">Drinks</p>
+            <h4>Natural orange juice fresh 1L bottle</h4>
+            <div class="stars">
+                ★★★★★
+            </div>
+            <div class="price">
+                <span class="new-price">$90</span>
+                <span class="old-price">$95</span>
+            </div>
+        </div>
+<!-- 4 -->
+ <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\c06635ffbd22c7d705e57bc89cc0ef8276b4656f.jpg" alt="Snacks">
+                <button class="cart-btn"><i class="fas fas fa-lock"></i></button>
+            </div>
+            <p class="category">Snacks</p>
+            <h4>Best snacks with hazel nut pack 200gm</h4>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <div class="price">
+                <span class="new-price">$145</span>
+                <span class="old-price">$150</span>
+            </div>
+        </div>
+
+        <!-- 5 -->
+         <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\39fe4d9aaffa21f32951025416cb5a37b7376e47.jpg" alt="Snacks">
+                <button class="cart-btn"><i class="fas fas fa-lock"></i></button>
+            </div>
+            <p class="category">Snacks</p>
+            <h4>Best snacks with hazel nut pack 200gm</h4>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <div class="price">
+                <span class="new-price">$145</span>
+                <span class="old-price">$150</span>
+            </div>
+        </div>
+        <!-- 6 -->
+         <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\6351169aebf88338d08abbbb3a9fa63eca161843.jpg" alt="Snacks">
+                <button class="cart-btn"><i class="fas fa-lock"></i></button>
+            </div>
+            <p class="category">Snacks</p>
+            <h4>Best snacks with hazel nut pack 200gm</h4>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <div class="price">
+                <span class="new-price">$145</span>
+                <span class="old-price">$150</span>
+            </div>
+        </div>
+
+
+<!-- 7 -->
+ <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\e42302aed449285d769008fdc4c923f0ee397b75.jpg" alt="Snacks">
+                <button class="cart-btn"><i class="fas fa-lock"></i></button>
+            </div>
+            <p class="category">Snacks</p>
+            <h4>Best snacks with hazel nut pack 200gm</h4>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <div class="price">
+                <span class="new-price">$145</span>
+                <span class="old-price">$150</span>
+            </div>
+        </div>
+        <!-- 8 -->
+         <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\e1e80b067ceec483f54b5c6735317b43ef86dcab.jpg" alt="Snacks">
+                <button class="cart-btn"><i class="fas fa-lock"></i></button>
+            </div>
+            <p class="category">Snacks</p>
+            <h4>Best snacks with hazel nut pack 200gm</h4>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <div class="price">
+                <span class="new-price">$145</span>
+                <span class="old-price">$150</span>
+            </div>
+        </div>
+
+
+        <!-- 9 -->
+         <div class="product-card">
+            <div class="img-container">
+                <img src="C:\Users\user\Desktop\finaly\images\c06635ffbd22c7d705e57bc89cc0ef8276b4656f.jpg" alt="Snacks">
+                <button class="cart-btn"><i class="fas fa-lock"></i></button>
+            </div>
+            <p class="category">Snacks</p>
+            <h4>Best snacks with hazel nut pack 200gm</h4>
+            <div class="stars">
+                ★★★★☆
+            </div>
+            <div class="price">
+                <span class="new-price">$145</span>
+                <span class="old-price">$150</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <button>Previous</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next</button>
+    </div>
+</div>
+
+
+
+
+<!-- footer  -->
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+
+
+    <div class="footer-col">
+      <img src="chife.jpg" alt="Foodzy Logo" class="footer-logo">
+      <p>FoodTrove is the biggest market of grocery products.<br>Get your daily needs from our store.</p>
+      <br><br><br>
+      <div class="aaa1">
+      <ul class="contact-info">
+        
+        <li>
+            <i class="fas fa-map-marker-alt" style="text-align: left;"></i> 
+                   51 Green St.Huntington ohaio beach ontario, NY 
+            <br>11746 KY 4783, USA.</li>
+        <li>
+            <i class="fas fa-envelope" style="text-align: left;">
+
+            </i> example@email.com</li>
+        <li>
+            <i class="fas fa-phone"></i> +91 123 4567890</li>
+      </ul>
+      </div>
+      
+
+    </div>
+
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li>About Us</li>
+        <li>Delivery Information</li>
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+        <li>Contact Us</li>
+        <li>Support Center</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Category</h3>
+      <ul>
+        <li>Dairy & Bakery</li>
+        <li>Fruits & Vegetable</li>
+        <li>Snack & Spice</li>
+        <li>Juice & Drinks</li>
+        <li>Chicken & Meat</li>
+        <li>Fast Food</li>
+      </ul>
+    </div>
+
+    <div class="footer-col newsletter">
+      <h3>Subscribe Our Newsletter</h3>
+      <div class="newsletter-box">
+        <input type="text" placeholder="Search here..."  style="width: 384;">
+        <button><i class="fas fa-paper-plane"></i></button>
+      </div>
+      <div class="social-icons">
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-x-twitter"></i></a>
+  <a href="#"><i class="fab fa-dribbble"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="mini-gallery">
+        <img src="C:\Users\user\Desktop\finaly\images\WhatsApp Image 2025-08-01 at 09.42.25_85bcf6f8.jpg" alt="">
+        <img src= "C:\Users\user\Desktop\finaly\images\22940279347374975_vdm.jpg" alt="">
+        <img src= "C:\Users\user\Desktop\finaly\images\306174474687356423_vdm.jpg" alt="">
+        <img src="C:\Users\user\Desktop\finaly\images\934848835159780246_vdm.jpg" alt="">
+        <img src="C:\Users\user\Desktop\finaly\images\d3f513af5c1eaba7f9e4919a343e6e5bede45843.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 <span class="highlight">foodzy</span>, All rights reserved.
+  </div>
+</footer>
+
+
+
+</body>
+</html>
+
+
