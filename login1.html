@@ -93,6 +93,40 @@ body{
 .search-container button:hover {
   background: #d9362a;
 }
+/* aboutas */
+.icon-menu {
+  display: flex;
+  gap: 30px; 
+}
+
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.icon-text i {
+  font-size: 18px; 
+}
+.under2{
+    width: 1300px;
+    height: 70px;
+    background-color: #f44336;
+    margin-left: -3rem;
+}
+.under2 span{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  
+}
 
 /* pro */
 
@@ -238,6 +272,87 @@ margin-right: 8px;
 /* endfooter */
 
 
+   
+    .login-box {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        width: 350px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        text-align: center;
+        position: relative;
+        margin-left: 25rem;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    .logo img {
+        width: 160px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .logo h2 {
+        font-size: 22px;
+        margin-top: 5px;
+        font-weight: bold;
+        display: none;
+    }
+    .form-group {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input {
+        width: 338px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .form-options a {
+        text-decoration: none;
+        color: gray;
+    }
+    .login-btn {
+        width: 80px;
+        height: 40px;
+        padding: 10px;
+        background: #f44336;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .login-btn:hover {
+        background: #d32f2f;
+    }
+    .signup {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .signup a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.361);
+        
+    }
+
+
 
 
 </style>
@@ -270,7 +385,7 @@ margin-right: 8px;
     
 <select name="" id="">
     <option value="">
-        Category
+        Products
     </option>
 </select>
 
@@ -281,7 +396,7 @@ margin-right: 8px;
 
 <select name="" id="">
     <option value="">
-        Category
+        Pages
     </option>
 </select>
 
@@ -293,7 +408,7 @@ margin-right: 8px;
             
 <select name="" id="">
     <option value="">
-Category
+Blogs
     </option>
 </select>
 
@@ -304,7 +419,7 @@ Category
             
 <select name="" id="">
     <option value="">
-Category
+Elements
     </option>
 </select>
 
@@ -333,17 +448,20 @@ Category
 
 <div class="icon-menu">
   <span class="icon-text">
-    <i class="fas fa-user"></i>
+    <a href="login1.html" style="text-decoration: none; color: black;"><i class="fas fa-user"></i></a>
+    
     Account
   </span>
 
   <span class="icon-text">
-    <i class="fas fa-heart"></i>
+    <a href="" style="text-decoration: none; color: black;"><i class="fas fa-heart"></i></a>
+    
     Wishlist
   </span>
 
   <span class="icon-text">
-    <i class="fas fa-shopping-cart"></i>
+    <a href="productlist.html" style="text-decoration: none; color: black;"><i class="fas fa-shopping-cart"></i></a>
+    
     Cart
   </span>
 </div>
@@ -355,7 +473,44 @@ Category
   <span style="color: white; font-weight: bold;   margin-top: 18.81px; ">Register</span> <span   style="color: white; font-weight: bold;  margin-top: 18.81px; ">Home - register</span>
     </header>
 
+<!-- ------------------ -->
 
+<div class="login-box">
+    <div class="logo">
+        <img src="images/form1.png" alt="FoodTrove Logo"><br>
+        <center>
+        <h2>FoodTrove</h2>
+        </center>
+    </div>
+    <form>
+        <div class="form-group">
+          <center>
+            <label  style="text-align: left; color: rgba(0, 0, 0, 0.425);">Email Address*</label>
+            <input type="email" placeholder="Enter Your Email" required>
+        </div>
+        </center>
+        <div class="form-group">
+          <center>
+            <label style="text-align: left; color: rgba(0, 0, 0, 0.425);">Password*</label>
+            <input type="password" placeholder="Enter Your password" required>
+            </center>
+        </div>
+        <div class="form-options">
+          
+            <label><input type="checkbox" > Remember Me</label>
+          
+            <a href="registration.html">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login-btn"  "> <a href="home.html"   style="color: white; text-decoration: none;">Login</a></button>
+        <div class="signup" style="text-align: right;">
+            <a href="#">Signup?</a>
+            
+        </div>
+    </form>
+</div>
+
+
+ <!-- -------------- -->
 
 <!-- footer  -->
 
@@ -427,11 +582,11 @@ Category
   <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
       <div class="mini-gallery">
-        <img src="C:\Users\user\Desktop\finaly\images\WhatsApp Image 2025-08-01 at 09.42.25_85bcf6f8.jpg" alt="">
-        <img src= "C:\Users\user\Desktop\finaly\images\22940279347374975_vdm.jpg" alt="">
-        <img src= "C:\Users\user\Desktop\finaly\images\306174474687356423_vdm.jpg" alt="">
-        <img src="C:\Users\user\Desktop\finaly\images\934848835159780246_vdm.jpg" alt="">
-        <img src="C:\Users\user\Desktop\finaly\images\d3f513af5c1eaba7f9e4919a343e6e5bede45843.jpg" alt="">
+        <img src="images/photo1.jpg" alt="">
+        <img src= "images/picture11.jpg" alt="">
+        <img src= "images/picture12.jpg" alt="">
+        <img src="images/picture13.jpg" alt="">
+        <img src="images/picture14.jpg" alt="">
       </div>
     </div>
 
@@ -441,7 +596,6 @@ Category
     © 2025 <span class="highlight">foodzy</span>, All rights reserved.
   </div>
 </footer>
-
 
 
 </body>

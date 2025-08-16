@@ -25,8 +25,6 @@ body{
        background: #fff;
       color: #333;
       padding:0 40px;
-      
-    
 
 }
     .topnavbar,.undernavbar{
@@ -94,6 +92,40 @@ body{
 
 .search-container button:hover {
   background: #d9362a;
+}
+/* aboutas */
+.icon-menu {
+  display: flex;
+  gap: 30px; 
+}
+
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.icon-text i {
+  font-size: 18px; 
+}
+.under2{
+    width: 1300px;
+    height: 70px;
+    background-color: #f44336;
+    margin-left: -3rem;
+}
+.under2 span{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  
 }
 /* aboutas */
 .icon-menu {
@@ -213,7 +245,7 @@ margin-left: 0.5rem;
   font-size: 14px;
   color: #333;
   position: relative;
-  top: -60rem;
+  top: -5rem;
 }
 
 .footer-container {
@@ -737,6 +769,125 @@ border-radius: 5px;
 
 
 
+
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #333;
+    }
+    section {
+        padding: 50px 10%;
+    }
+    h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    p.section-desc {
+        text-align: center;
+        color: gray;
+        max-width: 600px;
+        margin: auto;
+        font-size: 14px;
+    }
+    /* Testimonials */
+    .testimonials {
+        display: flex;
+        gap: 20px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .testimonial-card {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        flex: 1;
+        max-width: 300px;
+    }
+    .testimonial-card img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: -50px;
+        border: 3px solid #fff;
+    }
+    .testimonial-card h4 {
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    .testimonial-card p.role {
+        font-size: 13px;
+        color: gray;
+        margin: 0;
+    }
+    .testimonial-card p.quote {
+        font-size: 14px;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    /* Latest News */
+    .news-grid {
+        display: flex;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    .news-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        flex: 1;
+    }
+    .news-content {
+        padding: 15px;
+    }
+    .news-meta {
+        font-size: 12px;
+        color: gray;
+    }
+    .news-title {
+        font-weight: bold;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .read-more {
+        color: #00a676;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    .news-img {
+        position: relative;
+    }
+    .news-img img {
+        width: 100%;
+        display: block;
+    }
+    .date-badge {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background: #222;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .date-badge span {
+        display: block;
+        font-size: 10px;
+        color: #ccc;
+    }
+.divunder{
+  position: relative;
+  top: -85rem;
+}
+
 /* end product css */
 
 </style>
@@ -747,7 +898,7 @@ border-radius: 5px;
     <header>
         <div class="topnavbar">
         <i class="fa-solid fa-bars"></i>
-        <a href="#">Home</a>
+        <a href="home.html">Home</a>
 
 
         </a>
@@ -769,7 +920,7 @@ border-radius: 5px;
     
 <select name="" id="">
     <option value="">
-        Category
+       Products
     </option>
 </select>
 
@@ -780,7 +931,7 @@ border-radius: 5px;
 
 <select name="" id="">
     <option value="">
-        Category
+        Page
     </option>
 </select>
 
@@ -792,7 +943,7 @@ border-radius: 5px;
             
 <select name="" id="">
     <option value="">
-Category
+Blog
     </option>
 </select>
 
@@ -803,7 +954,7 @@ Category
             
 <select name="" id="">
     <option value="">
-Category
+Elements
     </option>
 </select>
 
@@ -832,18 +983,24 @@ Category
 
 <div class="icon-menu">
   <span class="icon-text">
+    <a href="registration.html"  style="color: black;">
     <i class="fas fa-user"></i>
+    </a>
     Account
   </span>
 
   <span class="icon-text">
-    <i class="fas fa-heart"></i>
+    <a href=""  style="color: black;">
+    <i class="fas fa-heart"></i></a>
     Wishlist
+    
   </span>
 
   <span class="icon-text">
-    <i class="fas fa-shopping-cart"></i>
+    <a href="productlist.html"  style="color: black;">
+    <i class="fas fa-shopping-cart"></i></a>
     Cart
+
   </span>
 </div>
 
@@ -860,20 +1017,20 @@ Category
         <h1>THE BEST WAU TO <BR>STUFF YOUR <BR>WALLET.</h1>
             <P>Todays's best deal</P>
             <button>
-                <i class="fas fa-"></i>
+                <i class="fas fa-arrow-right" ></i>
                 ORDER NOW</button>
      </div>
-<img src="C:\Users\user\Desktop\finaly\images\1a2b144527c2591118e8d9a27fb0ffa00a67cbf1.jpg" width="1300px" height="800px" style="margin-left: -3rem;  margin-bottom: 2rem;">
-<img src="C:\Users\user\Desktop\finaly\images\bc94b5deeb520b065a5128b71ccfc5664c029b51 (1).png" width="700px" height="500px" style="position: absolute; top: 20rem; left: 36rem; " >
+<img src="images/picture1.jpg" width="1300px" height="800px" style="margin-left: -3rem;  margin-bottom: 2rem;">
+<img src="images/picture2.png" width="700px" height="500px" style="position: absolute; top: 20rem; left: 36rem; " >
 <div class="linksnumber">
     <span style="font-size: 28px; color:#CD7A1D; font-weight: 700;">09-791-358-36</span>
-    <p style="color: WHITE; position: absolute ;top: 1rem;">WWW.EXEMPLE.COM</p>
+    <p style="color: WHITE; position: absolute ;top: 1.6rem;">WWW.EXEMPLE.COM</p>
 </div>
 <div class="all"">
 <div class="imgofmv">
 
-    <img src="C:\Users\user\Desktop\finaly\images\9b87d05a18ebb4acdac09e9e45b2dbfaf71cbbc6.jpg" alt="" style="z-index: -1;">
-    <img src="C:\Users\user\Desktop\finaly\images\d3f513af5c1eaba7f9e4919a343e6e5bede45843.jpg" alt="" style="z-index: -1;">
+    <img src="images/picture4.jpg" alt="" style="z-index: -1;">
+    <img src="images/picture5.jpg" alt="" style="z-index: -1;">
    
 </div>
 <div>
@@ -925,7 +1082,7 @@ Category
         <!-- Product 1 -->
         <div class="product-card">
             <div class="img-container">
-                <img src="C:\Users\user\Desktop\finaly\images\32966da4e1702fbf32accc5ccbd2815916da554f.jpg" alt="Lemon">
+                <img src="images/picture6.jpg" alt="Lemon">
                 <button class="cart-btn"><i class="fas fa-lock"></i></button>
             </div>
             <p class="category">Vegetables</p>
@@ -942,7 +1099,7 @@ Category
         <!-- Product 2 -->
         <div class="product-card">
             <div class="img-container">
-                <img src="C:\Users\user\Desktop\finaly\images\39fe4d9aaffa21f32951025416cb5a37b7376e47.jpg" alt="Snacks">
+                <img src="images/picture8.jpg" alt="Snacks">
                 <button class="cart-btn"><i class="fas fa-lock"></i></button>
             </div>
             <p class="category">Snacks</p>
@@ -959,7 +1116,7 @@ Category
         <!-- Product 3 -->
         <div class="product-card">
             <div class="img-container">
-                <img src="C:\Users\user\Desktop\finaly\images\6351169aebf88338d08abbbb3a9fa63eca161843.jpg" alt="Juice">
+                <img src="images/picture9.jpg" alt="Juice">
                 <button class="cart-btn"><i class="fas fas fa-lock"></i></button>
             </div>
             <p class="category">Drinks</p>
@@ -975,7 +1132,7 @@ Category
 <!-- 4 -->
  <div class="product-card">
             <div class="img-container">
-                <img src="C:\Users\user\Desktop\finaly\images\c06635ffbd22c7d705e57bc89cc0ef8276b4656f.jpg" alt="Snacks">
+                <img src="images/picture10.jpg" alt="Snacks">
                 <button class="cart-btn"><i class="fas fas fa-lock"></i></button>
             </div>
             <p class="category">Snacks</p>
@@ -992,7 +1149,7 @@ Category
         <!-- 5 -->
          <div class="product-card">
             <div class="img-container">
-                <img src="C:\Users\user\Desktop\finaly\images\39fe4d9aaffa21f32951025416cb5a37b7376e47.jpg" alt="Snacks">
+                <img src="images/picture8.jpg" alt="Snacks">
                 <button class="cart-btn"><i class="fas fas fa-lock"></i></button>
             </div>
             <p class="category">Snacks</p>
@@ -1008,7 +1165,7 @@ Category
         <!-- 6 -->
          <div class="product-card">
             <div class="img-container">
-                <img src="C:\Users\user\Desktop\finaly\images\6351169aebf88338d08abbbb3a9fa63eca161843.jpg" alt="Snacks">
+                <img src="images/picture9.jpg" alt="Snacks">
                 <button class="cart-btn"><i class="fas fa-lock"></i></button>
             </div>
             <p class="category">Snacks</p>
@@ -1083,7 +1240,7 @@ Category
 
 
 <div class="ct">
-  <img src="C:\Users\user\Desktop\finaly\images\1a2b144527c2591118e8d9a27fb0ffa00a67cbf1.jpg" width="1300px" height="700px" alt="" style="margin-left: -2.5rem;  position: relative;
+  <img src="images/picture1.jpg" width="1300px" height="700px" alt="" style="margin-left: -2.5rem;  position: relative;
   z-index: -1;
   top: -60rem;
   ">
@@ -1135,9 +1292,9 @@ Category
   </div>
 
 <div class="imgunder1" style="margin-left: 15rem; height: 400px; width: 400px; position: relative;  top: -55rem; gap: 5px; ;">
-  <div class="imgundera1" > <img src="C:\Users\user\Desktop\finaly\images\photo1.jpg" alt=""></div>
-  <div class="imgundera"> <img src="C:\Users\user\Desktop\finaly\images\piza.png" alt=""></div>
-  <div class="imgundera" >  <img src="C:\Users\user\Desktop\finaly\images\vegetableimag.jpg"" alt=""></div>
+  <div class="imgundera1" > <img src="images/photo1.jpg" alt=""></div>
+  <div class="imgundera"> <img src="images/piza.png" alt=""></div>
+  <div class="imgundera" >  <img src="images/vegetableimag.jpg" alt=""></div>
 
 </div>
 
@@ -1227,11 +1384,11 @@ Category
   <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
       <div class="mini-gallery">
-        <img src="C:\Users\user\Desktop\finaly\images\photo1.jpg" alt="">
-        <img src= "C:\Users\user\Desktop\finaly\images\22940279347374975_vdm.jpg" alt="">
-        <img src= "C:\Users\user\Desktop\finaly\images\306174474687356423_vdm.jpg" alt="">
-        <img src="C:\Users\user\Desktop\finaly\images\934848835159780246_vdm.jpg" alt="">
-        <img src="C:\Users\user\Desktop\finaly\images\d3f513af5c1eaba7f9e4919a343e6e5bede45843.jpg" alt="">
+        <img src="images/photo1.jpg" alt="">
+        <img src= "images/picture11.jpg" alt="">
+        <img src= "images/picture12.jpg" alt="">
+        <img src="images/picture13.jpg" alt="">
+        <img src="images/picture14.jpg" alt="">
       </div>
     </div>
 
@@ -1242,7 +1399,74 @@ Category
 </footer>
 
 
+<!-- Testimonials -->
+ <div class="divunder">
+<section>
+    <h2>Great Words From People</h2>
+    <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis.</p>
+    <div class="testimonials">
+        <div class="testimonial-card">
+            <img src="images/person1.jpg" alt="">
+            <p class="role">Co Founder</p>
+            <h4>Stephen Smith</h4>
+            <p class="quote">"Eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus vel facilisis."</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="images/person2.jpg" alt="">
+            <p class="role">Manager</p>
+            <h4>Lorem Robinson</h4>
+            <p class="quote">"Eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus vel facilisis."</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="images/preson3.jpg" alt="">
+            <p class="role">Team Leader</p>
+            <h4>Saddika Alard</h4>
+            <p class="quote">"Eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus vel facilisis."</p>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News -->
+<section>
+    <h2>Latest News</h2>
+    <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore lacus vel facilisis.</p>
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="news-content">
+                <p class="news-meta">By Admin | Snacks</p>
+                <p class="news-title">Urna pretium elit mauris cursus at elit Vestibulum.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="news-img">
+                <img src="food1.jpg" alt="">
+                <div class="date-badge">10 <span>oct</span></div>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-content">
+                <p class="news-meta">By Admin | Food</p>
+                <p class="news-title">Best guide to Shopping for organic ingredients.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="news-img">
+                <img src="food2.jpg" alt="">
+                <div class="date-badge">09 <span>sep</span></div>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-content">
+                <p class="news-meta">By Admin | Snacks</p>
+                <p class="news-title">Cursus at elit vestibulum urna pretium elit mauris.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="news-img">
+                <img src="food3.jpg" alt="">
+                <div class="date-badge">12 <span>oct</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
 
 </body>
-
 </html>
